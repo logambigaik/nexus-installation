@@ -21,11 +21,11 @@
     run_as_user="nexus"
     -------------------------------
 # Create softlink for nexus file
-    ln -s opt/nexus-1/bin/nexus /etc/init.d/nexus-1
+    ln -s opt/nexus-1/bin/nexus /etc/init.d/nexus
 # Login to nexus user:
     su - nexus
 # Start nexus:
-    service nexus-1 start
+    service nexus start
 # Check status of nexus:
     service nexus status
 # Open 8081 port in security gropus of server and Open nexus UI using ip-address with port as shown in below
