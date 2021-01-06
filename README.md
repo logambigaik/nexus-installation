@@ -10,22 +10,22 @@
     wget https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.0.2-02-unix.tar.gz
     tar xvzf nexus-3.0.2-02-unix.tar.gz
 # Change name of Nexus file:
-    mv nexus-3.0.2-02/ nexus
+    mv nexus-3.0.2-02/ nexus-1
 # Add nexus user:
     useradd nexus
 # Change owner ship for nexus file:
-    chown -R nexus:nexus nexus
+    chown -R nexus:nexus nexus-1
 # Open /opt/nexus/bin/nexus.rc file and update data like as below:
-    vi /opt/nexus/bin/nexus.rc
+    vi /opt/nexus-1/bin/nexus.rc
     -------------------------------
     run_as_user="nexus"
     -------------------------------
 # Create softlink for nexus file
-    ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
+    ln -s opt/nexus-1/bin/nexus /etc/init.d/nexus-1
 # Login to nexus user:
     su - nexus
 # Start nexus:
-    service nexus start
+    service nexus-1 start
 # Check status of nexus:
     service nexus status
 # Open 8081 port in security gropus of server and Open nexus UI using ip-address with port as shown in below
