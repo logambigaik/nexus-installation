@@ -77,7 +77,7 @@ For Jenkins server open new EC2 instance and install
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103828112-68501400-50a0-11eb-8ca5-0389d221c61d.JPG)
 
-
+```
 Script used :
 pipeline {
     agent any
@@ -144,18 +144,12 @@ pipeline {
     }
 }
 
+```
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103832569-92a3d080-50a4-11eb-8609-fcb83ba4f5ec.JPG)
 
 
-
-
-
-
-
-
 ![Capture](https://user-images.githubusercontent.com/54719289/103827623-6cc7fd00-509f-11eb-991b-4dc8b3b6f619.JPG)
 
- 
  
  
